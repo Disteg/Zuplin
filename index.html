@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <title>Zuplin</title>
+</head>
+<body class="page">
+    <div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Zuplin<br><small>Calculator</small></div></div>
+
+    <header class="header">
+        <div class="header__logo"></div>
+    </header>
+    <section class="calculator">
+        <form class="calculatorTable">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+                <div class="item">9</div>
+                <div class="item">0</div>
+        
+        </form>
+
+        
+    </section>
+    <footer></footer>
+    <script src="./script/api.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+    <script type="text/javascript">$(window).on('load', function () {
+        var $preloader = $('#p_prldr'),
+            $svg_anm   = $preloader.find('.svg_anm');
+        
+        $preloader.delay(500).fadeOut('slow');
+    });</script>
+</body>
+</html>
