@@ -9,34 +9,52 @@
 </head>
 <body class="page">
     <div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Zuplin<br><small>Calculator</small></div></div>
-
     <header class="header">
-        <div class="header__logo"></div>
+        <div class="header__logo">
+            <img src="./img/Zuplin.png" alt="Images">
+        </div>
     </header>
-    <section class="calculator">
-        <form class="calculatorTable">
-                <div class="item">1</div>
-                <div class="item">2</div>
-                <div class="item">3</div>
-                <div class="item">4</div>
-                <div class="item">5</div>
-                <div class="item">6</div>
-                <div class="item">7</div>
-                <div class="item">8</div>
-                <div class="item">9</div>
-                <div class="item">0</div>
+    
+    <div class="content">
         
-        </form>
+        <section class="calculator">
+            <div class="calcInput "><form name="form" ><input class="calcInput" type="text" name="textview" readonly></form></div>
+            <div class="calculatorTable">
+                    <button class="item" onclick="btnNum('1')">1</button>
+                    <button class="item"onclick="btnNum('2')">2</button>
+                    <button class="item" onclick="btnNum('3')">3</button>
+                    <button class="item btnColor" onclick="btnNum('+')">+</button>
+                    <button class="item" onclick="btnNum('4')">4</button>
+                    <button class="item" onclick="btnNum('5')">5</button>
+                    <button class="item" onclick="btnNum('6')">6</button>
+                    <button class="item btnColor" onclick="btnNum('-')">-</button>
+                    <button class="item" onclick="btnNum('7')">7</button>
+                    
+                    <button class="item" onclick="btnNum('8')">8</button>
+                    <button class="item" onclick="btnNum('9')">9</button>
+                    <button class="item btnColor" onclick="btnNum('*')">&times;</button>
+                    <button class="item btnColor" onclick="cleanInput('C')">C</button>
+                    <button class="item" onclick="btnNum('0')">0</button>
+                    
+                    <button class="item btnColor" onclick="equal()">= </button>
+                    <button class="item btnColor" onclick="btnNum('/')">&divide;</button>
+            
+            </div>
+    
+            
+        </section>
+        <footer class="footer">
+            <p>&copy; Disteg. V1.0</p>
+        </footer>
 
-        
-    </section>
-    <footer></footer>
+
+    </div>
     <script src="./script/api.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
     <script type="text/javascript">$(window).on('load', function () {
         var $preloader = $('#p_prldr'),
             $svg_anm   = $preloader.find('.svg_anm');
-        $preloader.delay(700).fadeOut('slow');
+        $preloader.delay(850).fadeOut('slow');
     });</script>
 </body>
 </html>

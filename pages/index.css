@@ -1,11 +1,22 @@
 .page {
-    max-width: 1280px;
-    height: 100vh;
-    background: linear-gradient(to right, #1a2980, #26d0ce);
+margin: 0 auto;
+min-width: 320px;
+max-width: 1280px;
+width: 100%;
+background-color: white;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
 }
 
+
+
+/*Preloader*/
+
 #p_prldr{
-    background-color:white;
+    background: white;
     position: fixed;
     left: 0;
     top: 0;
@@ -31,3 +42,148 @@
     font-family: 'Cinzel', serif;
     line-height:35px;}
      
+/*header*/
+
+.header {
+    display: flex;
+    max-width: 1084px;
+    min-height: 32px;
+    margin-top: 30px;
+    
+}
+
+
+@media  screen and (max-width: 400px) { 
+    .header {
+        display: block;
+        margin-left: 10%;
+       justify-content: center;
+       
+        
+    }
+
+}
+
+
+/*content*/
+
+.content {
+    
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+    display: block;
+    max-width: 1063px;
+    
+}
+
+
+
+
+.calculator {
+    margin-left: 37%;
+    margin-top: 257px;
+    align-items: center;
+    max-width: 300px;
+    display: block;
+    justify-content: center;
+    
+}
+
+
+@media  screen and (max-width: 400px) { 
+    .calculator {
+        display: block;
+        margin-left: 14%;
+        margin-top: 100px;
+       justify-content: center;
+        
+    }
+
+}
+
+/*item */
+
+
+.calcInput {
+    text-align: end;
+    justify-content: space-between;
+    font-family: 'Cinzel', serif;
+    font-style: 400;
+    font-size: 36px;
+    width: 300px;
+    height: 60px;
+    margin-bottom: 30px;
+    border: none;
+    
+}
+
+
+
+
+.calculatorTable {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+
+}
+
+.item {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-family: 'Cinzel', serif;
+    font-style: 400;
+    font-size: 36px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: none;
+    outline: none;
+    justify-content: center;
+    opacity: 1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+
+@media  screen and (max-width: 400px) { 
+    .item {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+
+    }
+
+}
+
+.item:last-child {
+    margin-right: 0px;
+    margin-bottom: 20px;
+}
+
+.item:hover {
+    opacity: 0.9;
+}
+
+
+.btnColor {
+    background-color: red;
+}
+
+
+/*Footer*/
+
+
+.footer {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin-top: 180px;
+    font-size: 14px;
+    width: 100%;
+    height: 30px;
+    
+}
