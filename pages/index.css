@@ -110,11 +110,10 @@ background-color: white;
 
 
 .calculator {
-    margin-left: auto;
+    margin: 0 auto;
     margin-top: 257px;
     align-items: center;
     max-width: 300px;
-    display: block;
     justify-content: center;
     
 }
@@ -136,7 +135,6 @@ background-color: white;
 
 .calcInput {
     text-align: end;
-    justify-content: space-between;
     font-family: 'Cinzel', serif;
     font-style: 400;
     font-size: 36px;
@@ -209,7 +207,7 @@ background-color: white;
 
 @media  screen and (max-width: 450px) { 
     .footer {
-        margin-top: 100px;
+        margin-top: 60px;
 
     }
 
